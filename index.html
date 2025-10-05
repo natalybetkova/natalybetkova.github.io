@@ -52,13 +52,24 @@
       </div>
     </article>
 
-    <!-- Раздел "Контакты" -->
-    <footer id="contacts">
-      <h2>Контакты</h2>
-      <p>Напишите мне: <a href="mailto:natalya.poetry@gmail.com">natalya.poetry@gmail.com</a></p>
-    </footer>
+     </main>
 
-  </main>
+  <!-- Контакты -->
+  <footer id="contacts">
+    <h2>Контакты</h2>
+    <p>Напишите мне: <a href="mailto:natalya.poetry@gmail.com">natalya.poetry@gmail.com</a></p>
+  </footer>
+
+  <!-- Авторское право -->
+  <footer class="copyright">
+    &copy; <span id="year"></span> Наталья Беткова. Все права защищены.<br>
+    Любое копирование, воспроизведение или использование текстов без письменного разрешения автора запрещено.
+  </footer>
+
+  <!-- Автоматическая подстановка года -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
